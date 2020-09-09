@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Дмитрий Басаргин](https://up.htmlacademy.ru/htmlcss/29/user/1595757).
-* Наставник:[Оксана Вайнруб](https://github.com/DimaBasargin/1595757-sedona-29.git).
+* Наставник:[Оксана :) Вайнруб](https://github.com/DimaBasargin/1595757-sedona-29.git).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
