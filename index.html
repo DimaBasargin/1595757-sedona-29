@@ -1,30 +1,33 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" >
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-<heder>
-  <nav>
-    <a>
+  <body class="page-body">
+<heder class="maih-header">
+  <nav class="main-navigation">
+    <a class="main-header-logo">
       <img src="https://cityofsedona.com/1200x56" alt="Логотип Седона">
     </a>
-    <ul>
-      <li><a href="pusto.html"> ИНФОРМАЦИЯ </a></li>
-      <li><a href="pusto.html"> ФОТО И ВИДЕО </a></li>
-      <li><a href="pusto.html"> КАРТА ШТАТА </a></li>
+    <ul class="site-navigation">
+      <li><a href="futurepage.html"> ИНФОРМАЦИЯ </a></li>
+      <li><a href="futurepage.html"> ФОТО И ВИДЕО </a></li>
+      <li><a href="futurepage.html"> КАРТА ШТАТА </a></li>
       <li><a href="hotels.html"> ГОСТИНИЦЫ </a></li>
     </ul>
   </nav>
 </heder>
-<main>
+<main class="center">
   <h1> CITY OF SEDONA</h1>
   <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-  <section>
+  <section class="features">
     <h2>Преимущества</h2>
-    <ul>
-      <li>
+    <ul class="feature-list">
+      <li class="feature-item">
         <h3>НАСТОЯЩИЙ ГОРОДОК</h3>
         <P>Рекомендуем пожить в настоящем мотеле, всё как в кино!</P>
       </li>
@@ -32,6 +35,7 @@
         <h3>ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
         <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
       </li>
+      <div class="feature345">
       <li>
         <h3>НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
         <p>все достопримечательности находятся очень близко</p>
@@ -44,11 +48,12 @@
         <h3>МАЛО ТУРИСТОВ</h3>
         <p>большинство едет в гранд каньон и толпится там</p>
       </li>
+    </div>
     </section>
-    <section>
+    <section class="service">
       <h2>Сервис</h2>
-<ul>
-  <li>
+<ul class="service-list">
+  <li class="service-item">
     <h3>ЖИЛЬЁ</h3>
     <p>Жильё Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
     </li>
@@ -62,42 +67,58 @@
         </li>
       </ul>
     </section>
-    <section>
+    <section class="interest">
       <h2> ЗАИНТЕРЕСОВАЛИСЬ?</h2>
       <p>Заинтересовались? Укажите предполагаемые даты поездки,<br>
         и мы покажем Вам лучшие предложения гостиниц в Седоне </p>
       </section>
-      <section>
+      <section class="search">
+        <!-- Дата заезда и дата выезда иконка календаря?
+      Взрослые/Дети изменение количества + - -->
     <h2>Поиск гостиницы в Седоне</h2>
-    <p>Дата заезда. Дата выезда. Взрослые. Дети.</p>
+    <p class="searchin">
+<label for="search-date">Дата заезда:</label>
+<input id="search-date" type="text" name="date"
+placeholder="24.april.2017">
+    </p>
+      <p class="searchout">
+        <label for="search-date">Дата выезда:</label>
+        <input id="search-date" type="text" name="date"
+        placeholder="04.july.2017">
+      </p>
+        <p class="searchold">Взрослые.</p>
+          <p class="searchchildren"> Дети.</p>
+          <button class="button" type="submit">Найти</button>
     <!-- Здесь будет форма записи -->
   </section>
 </main>
-<footer>
-  <section>
+
+
+<footer class="page-footer main-footer">
+  <section class="footer-contacts">
     <h2>Обратная связь</h2>
     <p>
       #visitsedona<br>
-      ТЕЛ: <a href="tel:+74956660166">+7 (495) 666-01-66</a>
+      ТЕЛ: <a  href="tel:+74956660166">+7 (495) 666-01-66</a>
     </p>
   </section>
-  <section>
+  <section class="footer-social">
     <h2>Социальные сети</h2>
     <ul>
       <li>
-        <a href="#">Твиттер</a>
+        <a class="social-button" href="#">Твиттер</a>
       </li>
       <li>
-        <a href="#">Фейсбук</a>
+        <a class="social-button" href="#">Фейсбук</a>
       </li>
       <li>
-        <a href="#">Ютуб</a>
+        <a class="social-button" href="#">Ютуб</a>
       </li>
     </ul>
   </section>
-  <p>
+  <p class="footer-copyright">
     Разработано:
-    <a href="https://htmlacademy.ru">HTML Academy</a>
+    <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
   </p>
 </footer>
   </body>
