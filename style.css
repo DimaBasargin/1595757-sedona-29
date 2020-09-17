@@ -1,0 +1,132 @@
+
+:root{
+--basic-black:#000000;
+--basic-white:#FFFFFF;
+--basic-dark:#EEEEEE;
+--extra-dark:#888888;
+--basic-blue:#81B3D2;
+--basic-brown:#766357;
+--basic-dark-footer:rgba(255, 255, 255, 0.9);
+}
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--extra-dark);
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*navigation*/
+.main-navigation {
+front-size: 16px;
+line-height: 24px;
+color:var(--basic-black);
+background-color: var(--basic-white);
+}
+.site-navigation {
+  list-style: none;
+}
+.site-navigation a, {
+  color: var(--basic-white);
+}
+.site-navigation a:hover,
+.site-navigation a:focus,
+ {
+  background-color: var(--basic-blue);}
+  /*features*/
+  .features-list {
+    list-style: none;
+  }
+
+  .feature-item {
+    text-align: center;
+  }
+
+  .feature-item h3 {
+    font-size: 21px;
+line-height: 21px;
+  }
+  .feature345{
+  color: var(--basic-black);
+  background-color: var(--basic-dark);
+}
+.feature345 h3 {
+  font-size: 14px;
+  line-height: 21px;
+}
+  }
+.service {
+  list-style: none;
+  font-size: 14px;
+line-height: 21px;
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+/* Contacts */
+
+.footer-contacts {
+  color: var(--basic-black);
+}
+/* Main footer */
+
+.main-footer {
+  color: var(--basic-black);
+  background-color: var(--basic-dark-footer);
+}
+.footer-contacts a {
+  color: var(--basic-black);
+  text-decoration: none;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+  text-decoration: none;
+}
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-social h2 {
+  font-size: 14px;
+
+}
+
+/* Social button */
+.button {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-blue);
+  border: none;
+}
+
+.social-button {
+  color: inherit;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--basic-dark-footer);
+}
+.footer-copyright .button:hover,
+.footer-copyright .button:focus {
+  color: var(--basic-black);
+  background-color: var(--basic-dark-footer);
+}
