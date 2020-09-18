@@ -11,7 +11,7 @@
 <heder class="maih-header">
   <nav class="main-navigation">
     <a class="main-header-logo">
-      <img src="https://cityofsedona.com/1200x56" alt="Логотип Седона">
+    <img src="img/logo.png" width="138" height="70"  alt="Логотип Седона">
     </a>
     <ul class="site-navigation">
       <li><a href="futurepage.html"> ИНФОРМАЦИЯ </a></li>
@@ -21,34 +21,38 @@
     </ul>
   </nav>
 </heder>
-<main class="center">
-  <h1> CITY OF SEDONA</h1>
-  <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+<main >
+  <section class="center">
+  <h1> CITY OF SEDONA<br>
+  Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+  <p > Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+</section>
   <section class="features">
     <h2>Преимущества</h2>
     <ul class="feature-list">
-      <li class="feature-item">
+      <li class="feature-item-blue">
         <h3>НАСТОЯЩИЙ ГОРОДОК</h3>
-        <P>Рекомендуем пожить в настоящем мотеле, всё как в кино!</P>
+        <P>Седона - не аттракцион для туристов, там
+течёт своя жизнь</P>
+
       </li>
-      <li>
+      <li class="feature-item-blue">
         <h3>ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
         <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
       </li>
-      <div class="feature345">
-      <li>
+
+      <li class="feature-item-dark">
         <h3>НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
         <p>все достопримечательности находятся очень близко</p>
       </li>
-      <li>
+      <li class="feature-item-dark">
         <h3>КРАСИВАЯ ДОРОГА</h3>
         <p>ехать в седону из лас-вегаса совсем не скучно!</p>
       </li>
-      <li>
+      <li class="feature-item-dark">
         <h3>МАЛО ТУРИСТОВ</h3>
         <p>большинство едет в гранд каньон и толпится там</p>
       </li>
-    </div>
     </section>
     <section class="service">
       <h2>Сервис</h2>
@@ -75,7 +79,9 @@
       <section class="search">
         <!-- Дата заезда и дата выезда иконка календаря?
       Взрослые/Дети изменение количества + - -->
-    <h2>Поиск гостиницы в Седоне</h2>
+      <section class="searchhotel">
+    <h2 >Поиск гостиницы в Седоне</h2>
+    </section
     <p class="searchin">
 <label for="search-date">Дата заезда:</label>
 <input id="search-date" type="text" name="date"
@@ -86,8 +92,15 @@ placeholder="24.april.2017">
         <input id="search-date" type="text" name="date"
         placeholder="04.july.2017">
       </p>
-        <p class="searchold">Взрослые.</p>
-          <p class="searchchildren"> Дети.</p>
+        <p class="searchold">
+          <label for="search-date">Взрослые</label>
+        <input id="search-date" type="text" name="number"
+        placeholder="+2-"></p>
+          <p class="searchchildren">
+            <label for="searchchildren">Дети </label>
+        <input id="searchchildren" type="text" name="number"
+          placeholder="+0-"></p>
+          </p>
           <button class="button" type="submit">Найти</button>
     <!-- Здесь будет форма записи -->
   </section>

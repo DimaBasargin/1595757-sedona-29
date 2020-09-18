@@ -3,7 +3,7 @@
 --basic-black:#000000;
 --basic-white:#FFFFFF;
 --basic-dark:#EEEEEE;
---extra-dark:#888888;
+--extra-dark:#f2f2f2;
 --basic-blue:#81B3D2;
 --basic-brown:#766357;
 --basic-dark-footer:rgba(255, 255, 255, 0.9);
@@ -15,7 +15,7 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: 400;
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--extra-dark);
@@ -44,27 +44,31 @@ background-color: var(--basic-white);
 .site-navigation a:focus,
  {
   background-color: var(--basic-blue);}
+  .center {
+        text-align: center;
+  background-color: var(--basic-white);
+  }
   /*features*/
-  .features-list {
+  .feature-list {
     list-style: none;
   }
 
-  .feature-item {
-    text-align: center;
-  }
-
-  .feature-item h3 {
+  .feature-item  {
     font-size: 21px;
 line-height: 21px;
+text-align: center;
   }
-  .feature345{
-  color: var(--basic-black);
+.feature-item-blue{
+  background-color: var(--basic-blue);
+  font-size: 21px;
+line-height: 21px;
+text-align: center;
+}
+.feature-item-dark{
   background-color: var(--basic-dark);
-}
-.feature345 h3 {
-  font-size: 14px;
-  line-height: 21px;
-}
+  font-size: 21px;
+line-height: 21px;
+text-align: center;
   }
 .service {
   list-style: none;
@@ -72,6 +76,9 @@ line-height: 21px;
 line-height: 21px;
   background-color: var(--basic-white);
   color: var(--basic-black);
+}
+.interest{
+  background-color: var(--basic-white);
 }
 /* Contacts */
 
@@ -104,6 +111,10 @@ line-height: 21px;
 .footer-social h2 {
   font-size: 14px;
 
+}
+.searchhotel{
+  background-color: var(--basic-brown);
+color: var(--basic-white);
 }
 
 /* Social button */
