@@ -1,6 +1,7 @@
 
 :root{
 --basic-black:#000000;
+--basic-blacksmall:#333333;
 --basic-white:#FFFFFF;
 --basic-dark:#EEEEEE;
 --extra-dark:#f2f2f2;
@@ -14,7 +15,7 @@ body {
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 21px;
   font-weight: 400;
   color: var(--basic-black);
   text-transform: uppercase;
@@ -44,41 +45,81 @@ background-color: var(--basic-white);
 .site-navigation a:focus,
  {
   background-color: var(--basic-blue);}
-  .center {
+  .p1{
+    text-align: center;
+background-color: var(--basic-white);
+font-size: 21px;
+line-height: 26px;
+font-weight: bold;
+
+
+  }
+  .p2 {
         text-align: center;
   background-color: var(--basic-white);
+  font-size: 14px;
+line-height: 21px;
   }
   /*features*/
   .feature-list {
-    list-style: none;
-  }
+  list-style: none;
+}
+  .feature-item-blue{
+    background-color: var(--basic-blue);
+    font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: var(--basic-white);}
 
-  .feature-item  {
-    font-size: 21px;
-line-height: 21px;
-text-align: center;
-  }
-.feature-item-blue{
+.feature-item-blue h3{
   background-color: var(--basic-blue);
   font-size: 21px;
-line-height: 21px;
+line-height: 26px;
 text-align: center;
+color: var(--basic-white);
 }
 .feature-item-dark{
   background-color: var(--basic-dark);
-  font-size: 21px;
+  font-size: 14px;
 line-height: 21px;
 text-align: center;
+color: var(--basic-blacksmall);
   }
-.service {
+  .feature-item-dark h3{
+    background-color: var(--basic-dark);
+    font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+    }
+    .service{
+      background-color: var(--basic-white);
+    }
+    .service-list{
+      list-style: none;
+    }
+    .service-item h3{
+      color: var(--basic-black);
+      background-color: var(--basic-white);
+      font-size: 21px;
+    line-height: 21px;
+    }
+.service-item {
   list-style: none;
   font-size: 14px;
 line-height: 21px;
   background-color: var(--basic-white);
-  color: var(--basic-black);
+  color: var(--basic-blacksmall);
 }
-.interest{
+.interest {
   background-color: var(--basic-white);
+font-size: 14px;
+line-height: 21px;
+}
+.interest h2{
+  background-color: var(--basic-white);
+  font-weight: bold;
+font-size: 30px;
+line-height: 24px;
 }
 /* Contacts */
 
@@ -91,9 +132,12 @@ line-height: 21px;
   color: var(--basic-black);
   background-color: var(--basic-dark-footer);
 }
-.footer-contacts a {
+.footer-contacts  {
   color: var(--basic-black);
   text-decoration: none;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
 }
 
 .footer-contacts a:hover,
@@ -112,9 +156,19 @@ line-height: 21px;
   font-size: 14px;
 
 }
+/* Как задать серый цвет в дата заезда и т.п*/
 .searchhotel{
   background-color: var(--basic-brown);
 color: var(--basic-white);
+font-weight: bold;
+font-size: 21px;
+line-height: 26px;
+}
+.search{
+  background-color: var(--basic-white);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
 }
 
 /* Social button */
@@ -126,6 +180,8 @@ color: var(--basic-white);
   text-transform: uppercase;
   background-color: var(--basic-blue);
   border: none;
+  font-size: 21px;
+  line-height: 26px;
 }
 
 .social-button {
