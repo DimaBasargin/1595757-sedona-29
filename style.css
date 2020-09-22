@@ -37,14 +37,22 @@ background-color: var(--basic-white);
 }
 .site-navigation {
   list-style: none;
+  font-weight: bold;
+font-size: 14px;
+line-height: 26px;
+color:var(--basic-black);
+background-color: var(--basic-white);
 }
-.site-navigation a, {
-  color: var(--basic-white);
+.site-navigation li {
+  display: inline;
 }
 .site-navigation a:hover,
 .site-navigation a:focus,
  {
   background-color: var(--basic-blue);}
+  .center{
+    background-color: var(--basic-white);
+  }
   .p1{
     text-align: center;
 background-color: var(--basic-white);
@@ -60,6 +68,58 @@ font-weight: bold;
   font-size: 14px;
 line-height: 21px;
   }
+  /*hotels page*/
+  .filtersearch{
+    color: var(--basic-white);
+
+  /*  background-image: url(img/background.png);
+    position: absolute;
+width: 1200px;
+height: 217px;
+left: 40px;
+top: 56px;*/
+
+  }
+  .filterresult li{
+    display: inline;
+  }
+  .resultserch {
+    background-color: var(--basic-white);
+  }
+
+  .filtersearch legend{
+    font-weight: normal;
+font-size: 16px;
+line-height: 21px;
+color: var(--basic-white);
+}
+.infrastructura-list{}
+  .infrastructura-item{
+    font-weight: normal;
+font-size: 14px;
+line-height: 21px;
+color: var(--basic-white);}
+.typeroom-item {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-white);
+}
+.hotels{
+  font-family: PT Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 21px;
+}
+.hotelsname{
+  font-family: PT Sans;
+font-style: normal;
+font-weight:bold;
+font-size: 21px;
+line-height: 26px;
+}
+
   /*features*/
   .feature-list {
   list-style: none;
@@ -147,7 +207,9 @@ line-height: 24px;
 .footer-social {
   text-align: center;
 }
-
+.footer-copyright{
+  text-align: right;
+}
 .footer-social ul {
   list-style: none;
 }
@@ -183,7 +245,41 @@ line-height: 26px;
   font-size: 21px;
   line-height: 26px;
 }
-
+.button-hotels{
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-blue);
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+}
+.button-reserved{
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-brown);
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+}
+.button-find{
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-blue);
+  border: none;
+  font-size: 14px;
+  line-height: 21px;
+}
 .social-button {
   color: inherit;
 }

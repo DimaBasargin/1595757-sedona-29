@@ -3,14 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" >
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-<heder>
-  <nav>
-    <a>
-      <img src="https://cityofsedona.com/1200x56" alt="Логотип Седона">
+  <body class="page-body">
+<heder class="maih-header">
+  <nav class="main-navigation">
+    <a class="main-header-logo">
+    <img src="img/logo.png" width="138" height="70"  alt="Логотип Седона">
     </a>
-    <ul>
+    <ul class="site-navigation">
       <li><a href="futurepage.html"> ИНФОРМАЦИЯ </a></li>
       <li><a href="futurepage.html"> ФОТО И ВИДЕО </a></li>
       <li><a href="futurepage.html"> КАРТА ШТАТА </a></li>
@@ -18,59 +21,100 @@
     </ul>
   </nav>
 </heder>
-<main>
-  <section>
-<h1>Фильтр поиска</h1>
-<h2>ИНФРАСТРУКТУРА</h2>
-<ul>
-  <li>БАССЕЙН</li>
-  <li>ПАРКОВКА</li>
-  <li>WI-FI</li>
+<main >
+  <section class="filtersearch">
+<fieldset>
+  <legend> ИНФРАСТРУКТУРА</legend>
+<ul class="infrastructura-list">
+  <li class="infrastructura-item"
+type="checkbox" name="swimingpool" id="swimingpool" checked>
+<label for="swimingpool">Бассейн </label>
+  </li>
+  <li class="infrastructura-item"
+type="checkbox" name="parking" id="parking" checked>
+<label for="parking">Парковка </label>
+  </li>
+  <li  class="infrastructura-item"
+type="checkbox" name="wifi" id="parking" checked>
+<label for="wifi">WI-FI </label>
+  </li>
 </ul>
-<h2>ТИП ЖИЛЬЯ</h2>
-<ul>
-  <li>ГОСТИНИЦА</li>
-  <li>МОТЕЛЬ</li>
-  <li>АПАРТАМЕНТЫ</li>
+</fieldset>
+<fieldset>
+<legend>ТИП ЖИЛЬЯ</legend>
+<ul class="typeroom-list">
+  <li class="typeroom-item"
+  type="checkbox" name="hotels" id="hotels" checked>
+<label for="hotels"> ГОСТИНИЦЫ</label>
+</li>
+<li class="typeroom-item"
+type="checkbox" name="motels" id="motels" checked>
+<label for="motels"> МОТЕЛЬ</label>
+</li>
+<li class="typeroom-item"
+type="checkbox" name="apartmens" id="apartmens" checked>
+<label for="apartmens"> АПАРТАМЕНТЫ</label>
+</li>
 </ul>
+</fieldset>
 <h2> СТОИМОСТЬ В СУТКИ (р):</h2>
 <p>Фильтр по цене.</p>
 </section>
-<section>
-  <h2>Результаты поиска</h2>
-  <h3>Найдено</h3>
+<!--Не могу изменить цвет,шрифт и список сделать по горизонтали
+<section class="resultserch">
+  <h2>Найдено:3</h2>
+  <h3> Сортировка:</h3>
+<ul class="filterresult">
+  <li>по цене</li>
+    <li>по типу</li>
+      <li>по рейтингу</li>
+    </ul>-->
+<section class="hotels">
   <ul>
-    <li>Amara Resort & Spa</li>
-    <li>Desert Quail Inn</li>
-    <li>Villas at Poco Diablo</li>
+    <li class="hotelsname">Amara Resort & Spa</li>
+    <p>Гостиница</p>
+        <p>от 4000 Р.</p>
+          <button class="button-hotels" type="submit">Подробнее</button>
+            <button class="button-reserved" type="submit">Забронировать</button>
+    <li class="hotelsname">Desert Quail Inn</li>
+    <p>Мотель</p>
+        <p>от 3000 Р.</p>
+          <button class="button-hotels" type="submit">Подробнее</button>
+            <button class="button-reserved" type="submit">Забронировать</button>
+    <li class="hotelsname">Villas at Poco Diablo</li>
+    <p>Апартаменты</p>
+        <p>от 2000 Р.</p>
+          <button class="button-hotels" type="submit">Подробнее</button>
+            <button class="button-reserved" type="submit">Забронировать</button>
   </ul>
+</section>
 
 </main>
-<footer>
-  <section>
+<footer class="page-footer main-footer">
+  <section class="footer-contacts">
     <h2>Обратная связь</h2>
     <p>
       #visitsedona<br>
-      ТЕЛ: <a href="tel:+74956660166">+7 (495) 666-01-66</a>
+      ТЕЛ: <a  href="tel:+74956660166">+7 (495) 666-01-66</a>
     </p>
   </section>
-  <section>
+  <section class="footer-social">
     <h2>Социальные сети</h2>
     <ul>
       <li>
-        <a href="#">Твиттер</a>
+        <a class="social-button" href="#">Твиттер</a>
       </li>
       <li>
-        <a href="#">Фейсбук</a>
+        <a class="social-button" href="#">Фейсбук</a>
       </li>
       <li>
-        <a href="#">Ютуб</a>
+        <a class="social-button" href="#">Ютуб</a>
       </li>
     </ul>
   </section>
-  <p>
+  <p class="footer-copyright">
     Разработано:
-    <a href="https://htmlacademy.ru">HTML Academy</a>
+    <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
   </p>
 </footer>
   </body>
