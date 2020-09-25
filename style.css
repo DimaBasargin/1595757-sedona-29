@@ -53,7 +53,7 @@ background-color: var(--basic-white);
   .center{
     background-color: var(--basic-white);
   }
-  .p1{
+  .sedonamain{
     text-align: center;
 background-color: var(--basic-white);
 font-size: 21px;
@@ -62,7 +62,7 @@ font-weight: bold;
 
 
   }
-  .p2 {
+  .sedonamain2 {
         text-align: center;
   background-color: var(--basic-white);
   font-size: 14px;
