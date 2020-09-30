@@ -56,6 +56,8 @@ img {
 width: 800px; */
   outline:5px solid rgba(255,0,0,0.3);
   outline-offset: -5px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /*navigation*/
 .main-navigation {
