@@ -4,10 +4,12 @@
 --basic-blacksmall:#333333;
 --basic-white:#FFFFFF;
 --basic-dark:#EEEEEE;
---extra-dark:#f2f2f2;
+--extra-dark:#F2F2F2;
 --basic-blue:#81B3D2;
 --basic-brown:#766357;
 --basic-dark-footer:rgba(255, 255, 255, 0.9);
+--basic-grey-border:#E5E5E5;
+--basic-grey:#666666
 }
 body {
   margin: 0;
@@ -31,7 +33,7 @@ img {
 .page{
   height:100%
 }
-.page-bode{
+.page-body{
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -39,7 +41,7 @@ img {
 }
 /* Main header*/
 .main-header{
-  margin-bottom: 70px;
+  margin-bottom: 0px;
   outline:5px solid rgba(0,255,0,0.7);
   outline-offset: -5px;
 }
@@ -134,39 +136,128 @@ line-height: 21px;
   }
   /*hotels page*/
   .filtersearch{
-    color: var(--basic-white);
+    /* background-image: image("backgroundsearchhotels.png"); */
+    color: var(--basic-black);
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
+    height: 217px;
+    margin-top: -20px;
   }
-  .filterresult li{
-    display: inline;
+  /* .filterresult li{
+    display: inline; */
   }
   .resultserch {
-    background-color: var(--basic-white);
+    background-color: var(--basic-black);
   }
+  .findpricetype{
+    display: flex;
+    flex-direction:row;
+    align-items: flex-start;
+  }
+  .find3{
+    margin-top: 29px;
+    margin-left: 73px;
+    margin-bottom: 31px;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+  }
+  .sort{
+    margin-top: 31px;
+    margin-left: 46px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .type{
+      margin-top: 31px;
+      margin-left: 32px;
+      font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  }
+  .price{
+    margin-top: 32px;
+    margin-left: 46px;
+    font-weight: normal;
+font-size: 12px;
+line-height: 18px;
+  }
+.rating{
+  margin-top: 32px;
+  margin-left: 33px;
+  font-weight: normal;
+font-size: 12px;
+line-height: 18px;
+}
+.shape{
+  margin-top: 40px;
+  margin-left: 503px;
+}
 
   .filtersearch legend{
     font-weight: normal;
 font-size: 16px;
 line-height: 21px;
-color: var(--basic-white);
+color: var(--basic-black);
+text-align: center;
 }
-.infrastructura-list{}
+.priceinday{
+grid-column-start: 5;
+grid-column-end: 7;
+}
+.infrastructura-list{
+  /* color: var(--basic-black); */
+}
   .infrastructura-item{
     font-weight: normal;
 font-size: 14px;
 line-height: 21px;
-color: var(--basic-white);}
+color: var(--basic-black);}
 .typeroom-item {
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  color: var(--basic-white);
+  color: var(--basic-black  );
 }
-.hotels{
+.hotelsmargintop{
+  margin-top: 31px;
+}
+.hotel{
+  display:flex;
+  /* flex-direction:row; */
   font-family: PT Sans;
+  align-items: center;
+border-top: 1px solid var(--basic-grey-border);
+/* border-bottom: 2px solid var(--basic-grey-border); */
 font-style: normal;
 font-weight: normal;
 font-size: 14px;
 line-height: 21px;
+height: 150px;
+margin-left: 73px;
+/* margin-top: 31px; */
+}
+.imghotels{
+  order:-1;
+  height: 90px;
+  width: 135px;
+}
+.textandbutton{
+  /* display: flex;
+  flex-direction: column; */
+  flex: 1;
+  margin-left: 29px;
+  height: 90px;
+  margin-top: -11px;
+}
+.stars{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+width: 183px;
+height: 91px;
 }
 .hotelsname{
   font-family: PT Sans;
@@ -174,6 +265,17 @@ font-style: normal;
 font-weight:bold;
 font-size: 21px;
 line-height: 26px;
+margin-top:0px;
+}
+.hotelsprice{
+    margin:7px 0px 15.5px 0px;
+}
+/* .viksa{
+  width: 107px;
+  text-align: left;
+} */
+.amaraprice{
+  margin-left:33px;
 }
 
   /*features*/
@@ -363,36 +465,6 @@ line-height: 24px;
 }
 /* Contacts */
 
-.footer-contacts {
-  color: var(--basic-black);
-}
-
-.footer-contacts  {
-  color: var(--basic-black);
-  text-decoration: none;
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
-}
-
-.footer-contacts a:hover,
-.footer-contacts a:focus {
-  text-decoration: none;
-}
-.footer-social {
-  text-align: center;
-}
-.footer-copyright{
-  text-align: right;
-}
-.footer-social ul {
-  list-style: none;
-}
-
-.footer-social h2 {
-  font-size: 14px;
-
-}
 /* Как задать серый цвет в дата заезда и т.п*/
 .searchhotel{
   background-color: var(--basic-brown);
@@ -431,6 +503,10 @@ line-height: 26px;
   font-weight: bold;
   font-size: 14px;
   line-height: 21px;
+  width: 110px;
+height: 27px;
+margin-left:0px;
+margin-bottom: 30px;
 }
 .button-reserved{
   font: inherit;
@@ -441,6 +517,24 @@ line-height: 26px;
   background-color: var(--basic-brown);
   border: none;
   font-weight: bold;
+  width: 142px;
+height: 27px;
+  font-size: 14px;
+  line-height: 21px;
+  margin-left:6px;
+  margin-bottom: 30px;
+}
+.button-rating{
+  font: inherit;
+  text-align: center;
+  color: var(--basic-grey);
+  text-transform: uppercase;
+    vertical-align: middle;
+  background-color: var(--extra-dark);
+  border: none;
+  font-weight: bold;
+  width: 110px;
+height: 27px;
   font-size: 14px;
   line-height: 21px;
 }
@@ -463,8 +557,43 @@ line-height: 26px;
 .social-button:focus {
   background-color: var(--basic-dark-footer);
 }
+.page-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+}
 .footer-copyright .button:hover,
 .footer-copyright .button:focus {
   color: var(--basic-black);
   background-color: var(--basic-dark-footer);
+}
+.footer-contacts {
+  color: var(--basic-black);
+}
+.footer-contacts  {
+  color: var(--basic-black);
+  text-decoration: none;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+  text-decoration: none;
+}
+.footer-social {
+  text-align: center;
+}
+.footer-copyright{
+  text-align: right;
+}
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-social h2 {
+  font-size: 14px;
+
 }
