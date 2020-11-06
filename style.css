@@ -104,6 +104,18 @@ height: 509px;
   width: 1200px;
 height: 594px;
 }
+.modal-map {
+  width: 766px;
+  /* height: 560px;
+  border: 7px solid white; */
+}
+.modal-map img {
+  display: block;
+}
+.modal-map iframe {
+  border: none;
+}
+
 .welcomeimg{
   padding-top: 77.35px;
 }
@@ -835,7 +847,7 @@ line-height: 26px;
   /* height: 395px; */
   background-color: #ffffff;
   position: absolute;
-  left: calc(50% - 284px);
+  left: calc(50% - 70px);
   top: -86px;
 }
 .appointment-form{
