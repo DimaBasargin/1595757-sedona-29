@@ -686,8 +686,27 @@ line-height: 21px;
 text-align: center;
 color: var(--basic-blacksmall);
 }
-.row2 img{
+/* .row2 img{
   justify-self: center;
+} */
+.icon{
+  display: flex;
+  justify-content: center;
+}
+.icon:before{
+  height: 80px;
+  width: 75px;
+  content: "";
+  background-repeat: no-repeat;
+}
+.food-icon:before{
+background-image: url("img/food.png");
+}
+.house-icon:before{
+  background-image: url("img/house.png");
+}
+.souvenirs-icon:before{
+  background-image: url("img/souvenirs.png");
 }
 .row2 h3{
   font-size: 21px;
@@ -809,7 +828,7 @@ line-height: 26px;
 }
 .appointment{
   width: 568px;
-  height: 395px;
+  /* height: 395px; */
   background-color: #ffffff;
   position: absolute;
   left: calc(50% - 284px);
@@ -845,9 +864,17 @@ font-weight: bold;
 font-size: 14px;
 line-height: 26px;
 }
-.content{
+.modal-content{
   padding: 55px;
   background-color: var(--basic-white);
+  display: none;
+}
+.modal-show {
+  display: block;
+   animation: bounce 0.6s;
+}
+.modal-error {
+  animation: shake 0.6s;
 }
 .appointment-button{
   font: inherit;
@@ -859,7 +886,7 @@ line-height: 26px;
   border: none;
   outline: none;
   font-size: 21px;
-  line-height: 26px;
+  line-height: 61px;
   width: 100%;
   height: 58px;
   margin-top: 24px;
@@ -876,7 +903,7 @@ line-height: 26px;
   width: 68px;
 
 }
-.calendar{
+.calendar-in{
   display: flex;
     justify-content: space-between;
     align-items: center;
@@ -888,17 +915,42 @@ line-height: 26px;
   padding-left: 13px;
   padding-right: 9px;
 }
-.calendar input{
+.calendar-in input{
   outline: none;
 }
-.calendar:hover,.calendar:hover input{
+.calendar-in:hover,.calendar-in:hover input{
   background-color:#ebebeb;
 }
-.calendar:active{
+.calendar-in:active{
   background-color: var(--basic-white);
   border: 2px solid #e5e5e5;
 }
-.calendar:active input{
+.calendar-in:active input{
+  background-color: var(--basic-white);
+}
+.calendar-out{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 114px; */
+      min-width: 0;
+  flex: 1;
+  background-color: var(--extra-dark);
+  border: none;
+  padding-left: 13px;
+  padding-right: 9px;
+}
+.calendar-out input{
+  outline: none;
+}
+.calendar-out:hover,.calendar-out:hover input{
+  background-color:#ebebeb;
+}
+.calendar-out:active{
+  background-color: var(--basic-white);
+  border: 2px solid #e5e5e5;
+}
+.calendar-out:active input{
   background-color: var(--basic-white);
 }
 
@@ -912,13 +964,22 @@ line-height: 26px;
   background-color: var(--extra-dark);
   border: none;
 }
-.calendar svg{
+.calendar-in svg{
  fill:#A9A9A9
 }
-.calendar:hover svg{
+.calendar-out svg{
+ fill:#A9A9A9
+}
+.calendar-in:hover svg{
   fill:Var(--basic-black);
 }
-.calendar:active svg{
+.calendar-in:active svg{
+  fill:var(--basic-blue);
+}
+.calendar-out:hover svg{
+  fill:Var(--basic-black);
+}
+.calendar-out:active svg{
   fill:var(--basic-blue);
 }
 .plusminus input{
@@ -973,7 +1034,7 @@ color: var(--basic-black);
   outline: none;
   font-weight: bold;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 27px;
   width: 110px;
 height: 27px;
 margin-left:0px;
@@ -1001,7 +1062,7 @@ outline: none;
   width: 142px;
 height: 27px;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 27px;
   margin-left:6px;
   margin-bottom: 30px;
   outline: none;
@@ -1052,7 +1113,7 @@ justify-content: center;
   justify-content: space-between;
   width: 150px;
 }
-.button.html{
+.htmlacademy{
     font: inherit;
     text-align: center;
     color: var(--basic-white);
@@ -1124,4 +1185,43 @@ align-items: center;
 }
 .footer-social h2 {
   font-size: 14px;
+}
+/* Animation */
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
